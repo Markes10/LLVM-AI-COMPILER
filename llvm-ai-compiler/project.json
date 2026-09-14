@@ -1,0 +1,8 @@
+{
+  "id": "24",
+  "name": "24-llvm-ai-compiler",
+  "title": "AI-Assisted Domain-Specific Compiler",
+  "language": "LLVM",
+  "domain": "Compiler Infrastructure & Code Generation",
+  "description": "Custom LLVM IR generation and SIMD vector optimization pass lowering high-level tensor computation graphs into vectorized machine code with hardware FMA intrinsics."
+}
