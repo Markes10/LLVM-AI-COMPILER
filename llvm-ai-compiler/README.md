@@ -1,9 +1,9 @@
-# 24 - Vectorized AI Tensor Kernel Compiler (LLVM IR)
+# Vectorised AI Tensor Kernel Compiler (LLVM IR)
 
 ## Executive Overview
-A domain-specific tensor compiler backend generating hand-optimized **LLVM Intermediate Representation (LLVM IR)**. It generates 8-lane single-precision SIMD vector code targeting AVX2 / AVX-512 with hardware fused multiply-add (`@llvm.fma.v8f32`) intrinsics, 32-byte aligned loads, and unrolled loops.
+A domain-specific tensor compiler backend generating hand-optimised **LLVM Intermediate Representation (LLVM IR)**. It generates 8-lane single-precision SIMD vector code targeting AVX2 / AVX-512 with hardware fused multiply-add (`@llvm.fma.v8f32`) intrinsics, 32-byte aligned loads, and unrolled loops.
 
-## Compiler Vectorization Pipeline
+## Compiler Vectorisation Pipeline
 
 ```mermaid
 graph TD
@@ -19,7 +19,7 @@ graph TD
 - **`src/build_ir.sh`**: Compilation script using `llc` and `clang`.
 - **`runner/run.js`**: Static LLVM IR validator and execution simulator.
 
-## Vectorized LLVM IR Excerpt
+## Vectorised LLVM IR Excerpt
 ```llvm
 define void @tensor_gemm_8x8_fma(
     float* noalias nocapture readonly %A,
